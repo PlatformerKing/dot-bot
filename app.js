@@ -781,4 +781,4 @@ client.on('messageReactionAdd', (r, user) => {
     }
 });
 
-client.login(process.env.TOKEN);
+client.login(process.env.BOT_TOKEN);
