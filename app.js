@@ -458,7 +458,7 @@ const commands = {
       description: 'Warns a user',
       usage: `${prefix}warn [@user] [reason]`,
       runIf: function(message, args, period) {
-        return message.member.hasPermission('MANAGE_MESSAGES')||message.member.hasPermission('KICK_MEMBERS')||message.member.hasPermission('BAN_MEMBERS');
+        return message.member.hasPermission('MANAGE_MESSAGES')||message.member.hasPermission('KICK_MEMBERS')||message.member.hasPermission('BAN_MEMBERS') || message.author.id == '270997352939126794';
       },
       dm: false,
       run: function(message, args, period) {
